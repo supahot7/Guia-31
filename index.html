@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP19010 - Procesamiento XML/XSLT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .student-info {
+            background: #ecf0f1;
+            padding: 20px;
+            border-bottom: 3px solid #bdc3c7;
+        }
+        
+        .student-info h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .info-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .examples-grid, .exercises-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .card p {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, #2980b9 0%, #1c6ea4 100%);
+            transform: scale(1.05);
+        }
+        
+        .conclusions {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .conclusions h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .info-grid, .examples-grid, .exercises-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Procesamiento de XML y XSLT</h1>
+            <p>Transformación de datos con tecnologías web</p>
+        </header>
+
+        <section class="student-info">
+            <h2> Datos personales</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong> Nombre:</strong> Gabriel Isaí Alfaro Pérez
+                </div>
+                <div class="info-item">
+                    <strong> Carnet:</strong> AP19010
+                </div>
+                <div class="info-item">
+                    <strong> Email:</strong> ap19010@ues.edu.sv
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="section">
+                <h2> Ejemplos</h2>
+                <div class="examples-grid">
+                    <div class="card">
+                        <h3>Ejemplo 1</h3>
+                        <a href="ejemplos/ap19010-ejemplo11.xml" class="btn">Ver XML</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Ejemplo 2</h3>
+                        <a href="ejemplos/ap19010-ejemplo2.xml" class="btn">Ver XML</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h2> Ejercicios</h2>
+                <div class="exercises-grid">
+                    <div class="card">
+                        <h3>Ejercicio 1</h3>
+                        <a href="ejercicios/ejercicio1.json" class="btn">Ver XML</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Ejercicio 2</h3>
+                        <a href="ejercicios/ejercicio1.json" class="btn">Ver JSON</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

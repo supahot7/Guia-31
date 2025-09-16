@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="ap19010-ejemplo1.css"?>
+<!-- ejemplo1.xml  AP19010 --> 
+<fichero>
+<ficha id="1" fechaingreso="1/11/2012">
+<nombre>Antonio</nombre>
+<apellido>Barbero</apellido>
+<direccion>Calle de Los Andes, 45</direccion>
+</ficha>
+<ficha id="2" fechaingreso="12/02/2023">
+<nombre>Gabriel</nombre>
+<apellido>Alfaro</apellido>
+<direccion>Cuscatancingo</direccion>
+<telefono>78965478</telefono>
+<email>alfagabriel9@yahoo.com</email>
+</ficha>
+</fichero> 
